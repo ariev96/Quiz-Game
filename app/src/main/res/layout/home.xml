@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/homequizapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20px"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Quiz Game" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnentryquiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:onClick="actionpreview"
+            android:text="Entry Data Quiz" />
+
+        <Button
+            android:id="@+id/btnplayquiz"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_height="wrap_content"
+            android:onClick="actionquiz"
+            android:text="Play Quiz" />
+
+        <Button
+            android:id="@+id/btnhighscore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:onClick="actionhighscore"
+            android:text="High Score" />
+
+        <Button
+            android:id="@+id/btnabout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:onClick="actionAbout"
+            android:text="About" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inputpertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input Pertanyaan"
+        />
+
+    <EditText
+        android:id="@+id/inputpila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input Pilihan A" />
+
+    <EditText
+        android:id="@+id/inputpilb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input Pilihan B" />
+
+    <EditText
+        android:id="@+id/inputpilc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input Pilihan C" />
+
+    <EditText
+        android:id="@+id/inputpild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input Pilihan D" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtjawaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="20px"
+            android:text="Jawaban"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbpila"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilihan A" />
+
+        <CheckBox
+            android:id="@+id/cbpilb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilihan B" />
+
+        <CheckBox
+            android:id="@+id/cbpilc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilihan C" />
+
+        <CheckBox
+            android:id="@+id/cbpild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilihan D" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnbatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="120px"
+            android:onClick="actionBatal"
+            android:text="Batal" />
+
+        <Button
+            android:id="@+id/btnsimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="120px"
+            android:onClick="actionSimpan"
+            android:text="Simpan" />
+    </LinearLayout>
+
+</LinearLayout>
